@@ -28,7 +28,7 @@ Module.register("MMM-Birds",{
     },
 
 	getDom: function() {
-
+		var button = document.createElement("div");
 		var iframe = document.createElement("IFRAME");
 		iframe.classList.add("iframe");
 		iframe.style = "border: 0 none transparent";
@@ -38,7 +38,9 @@ Module.register("MMM-Birds",{
     iframe.src="http://kayla.manonx.com/birds.html";
 
 		// <iframe width="480" height="270" src="http://www.ustream.tv/embed/17074538?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
-
-		return iframe;
+    $(button).on("click", function(){
+    return iframe;
+    })
 	},
+
 });
