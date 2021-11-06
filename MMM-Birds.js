@@ -43,10 +43,9 @@ Module.register("MMM-Birds",{
     iframe.src="http://kayla.manonx.com/birds.html";
 
 		// <iframe width="480" height="270" src="http://www.ustream.tv/embed/17074538?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
-    document.body.appendChild(button);
-    $(button).on("click", function(){
+    
     return iframe;
-    })
+    
 	},
 
 });
