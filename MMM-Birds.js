@@ -28,24 +28,28 @@ Module.register("MMM-Birds",{
     },
 
 	getDom: function() {
+    var wrapper = document.createElement("div");
     var button = document.createElement("BUTTON");
-		var iframe = document.createElement("IFRAME");
+    var iframe = document.createElement("IFRAME");
     button.classList.add("button");
     button.style = "border-radius: 1000px, border: 1 solid white";
     iframe.classList.add("iframe");
     iframe.style = "border: 0 none transparent";
-    
 		iframe.width = this.config.width;
 		iframe.height = this.config.height;
 		type="text/javascript";
     iframe.src="http://kayla.manonx.com/birds.html";
-
-		// <iframe width="480" height="270" src="http://www.ustream.tv/embed/17074538?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
-    button.onclick = function () {
+		
+		wrapper.appendChild(button);
+		wrapper.appendChild(iframe);
+		
+		$(button).on("click", function(){
       return iframe;
-    };
+		});
+		
+		return wrapper;
 
-    document.body.appendChild(button);
-	},
+
+	}
 
 });
