@@ -12,3 +12,8 @@
 .MMM-Birds {
    padding-top: 0px;
 }
+
+.bird{
+  content: '&#xf4ba;';
+  color: white;
+}
