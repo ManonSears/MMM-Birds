@@ -31,7 +31,8 @@ Module.register("MMM-Birds",{
     },
 
 	getDom: function() {
-		var button = document.getElementsByClassName("bird");
+    var button = document.CreatetElement("div");
+    button.className = "bird";
 		var iframe = document.createElement("IFRAME");
 		iframe.classList.add("iframe");
 		iframe.style = "border: 0 none transparent";
