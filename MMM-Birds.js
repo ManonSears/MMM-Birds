@@ -41,16 +41,4 @@ Module.register("MMM-Birds",{
 
 		return iframe;
 	},
-
-	 /////  Add this function to the modules you want to control with voice //////
-
-    notificationReceived: function(notification, payload) {
-        if (notification === 'HIDE_EARTH') {
-            this.hide(1000);
-        }  else if (notification === 'SHOW_EARTH') {
-            this.show(1000);
-        }
-
-    },
-
 });
