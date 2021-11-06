@@ -26,7 +26,7 @@ Module.register("MMM-Birds",{
 	getStyles: function() {
         return [
           "mmm-birds.css",
-          
+          "https://use.fontawesome.com/releases/v5.0.7/css/all.css"
         ];
     },
 
