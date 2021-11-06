@@ -28,15 +28,10 @@ Module.register("MMM-Birds",{
     },
 
 	getDom: function() {
-    var button = document.CreatetElement("BUTTON");
+
 		var iframe = document.createElement("IFRAME");
-    iframe.classList.add("iframe");
-    button.classList.add("button");
-    
+
     iframe.style = "border: 0 none transparent";
-    button.style = "border-radius: 1000px, border: 1 solid white";
-    button.width = this.config.width;
-    button.height = this.config.height;
 		iframe.width = this.config.width;
 		iframe.height = this.config.height;
 		type="text/javascript";
