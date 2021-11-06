@@ -25,8 +25,7 @@ Module.register("MMM-Birds",{
 
 	getStyles: function() {
         return [
-          "mmm-birds.css",
-          "https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+          "mmm-birds.css"
         ];
     },
 
@@ -35,6 +34,7 @@ Module.register("MMM-Birds",{
 		var iframe = document.createElement("IFRAME");
     iframe.classList.add("iframe");
     button.classList.add("button");
+    document.body.appendChild(button);
     iframe.style = "border: 0 none transparent";
     button.style = "border-radius: 1000px, border: 1 solid white";
     button.width = this.config.width;
