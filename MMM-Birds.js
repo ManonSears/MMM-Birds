@@ -24,7 +24,10 @@ Module.register("MMM-Birds",{
 	},
 
 	getStyles: function() {
-        return ["mmm-birds.css"];
+        return [
+          "mmm-birds.css",
+          
+        ];
     },
 
 	getDom: function() {
