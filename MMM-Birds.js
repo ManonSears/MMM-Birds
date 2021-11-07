@@ -49,7 +49,7 @@ Module.register("MMM-Birds",{
 		
 		button.className = "hide-toggle";
 		button.appendChild(text);
-		text.innerHTML = "Hide";
+		text.innerHTML = "Fly";
 		
 		wrapper.appendChild(button);
 		wrapper.appendChild(iframe);
@@ -58,12 +58,12 @@ Module.register("MMM-Birds",{
 			if(hidden){
 				$(iframe).fadeIn(200);
 				$(button).fadeTo(1000, 0.3);
-				$(text).html('Show');
+				$(text).html('Hide');
 				hidden = false;
 			}else{
 				$(iframe).fadeOut(200);
 				$(button).fadeTo(1000, 1);
-				$(text).html('Hide');
+				$(text).html('Fly');
 				hidden = true;
 			}
 		});
