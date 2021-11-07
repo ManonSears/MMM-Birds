@@ -21,6 +21,7 @@
 
 .hide-toggle span{
   margin: auto 0;
+  vertical-align: middle;
 	text-align: center;
 	font-size: 20px;
 }
