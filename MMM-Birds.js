@@ -9,6 +9,20 @@
 
 Module.register("MMM-Birds",{
 
+  defaults: {
+    animationSpeed: "0",
+    updateInterval: 60 * 60 * 1000,
+},
+
+  start: function () {
+  self = this;
+
+  setInterval(function() {
+  self.updateDom(self.config.animationSpeed || 0);
+  }, this.config.updateInterval);
+
+},
+
 	getScripts: function() {
 		return ["modules/MMM-Birds/js/jquery.js"];
 	},
