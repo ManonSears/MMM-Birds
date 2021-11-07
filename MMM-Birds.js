@@ -38,7 +38,7 @@ Module.register("MMM-Birds",{
 		var iframe = document.createElement("IFRAME");
 		iframe.src = iframe.src;
 		iframe.classList.add("iframe");
-		//iframe.setAttribute("timestamp", new Date().getTime());
+		iframe.setAttribute("timestamp", new Date().getTime());
 		iframe.style = "border: 0 none transparent";
 		iframe.width = this.config.width;
 		iframe.height = this.config.height;
