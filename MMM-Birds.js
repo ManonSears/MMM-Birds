@@ -21,26 +21,33 @@ Module.register("MMM-Birds",{
 		var wrapper = document.createElement("div");
 		var button = document.createElement("div");
 		var text = document.createElement("span");
-		var overlay = document.createElement("div");
+    var iframe = document.createElement("IFRAME");
+    iframe.classList.add("iframe");
+    iframe.style = "border: 0 none transparent";
+    iframe.width = this.config.width;
+    iframe.height = this.config.height;
+    type="text/javascript";
+    iframe.src="http://kayla.manonx.com/birds.html";
+
 		var hidden = true;
 		
-		overlay.className = "paint-it-black";
+		iframe.className = "paint-it-black";
 		
 		button.className = "hide-toggle";
 		button.appendChild(text);
 		text.innerHTML = "Hide";
 		
 		wrapper.appendChild(button);
-		wrapper.appendChild(overlay);
+		wrapper.appendChild(iframe);
 		
 		$(button).on("click", function(){
 			if(hidden){
-				$(overlay).fadeIn(1000);
+				$(iframe).fadeIn(1000);
 				$(button).fadeTo(1000, 0.3);
 				$(text).html('Show');
 				hidden = false;
 			}else{
-				$(overlay).fadeOut(1000);
+				$(iframe).fadeOut(1000);
 				$(button).fadeTo(1000, 1);
 				$(text).html('Hide');
 				hidden = true;
