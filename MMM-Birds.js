@@ -52,6 +52,8 @@ Module.register("MMM-Birds",{
 		
 		wrapper.appendChild(button);
 		wrapper.appendChild(iframe);
+
+		document.getElementById('paint-it-black').src = document.getElementById('paint-it-black').src
 		
 		$(button).on("click", function(){
 			if(hidden){
