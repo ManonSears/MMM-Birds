@@ -28,21 +28,20 @@ Module.register("MMM-Birds",{
 	},
 
 	getStyles: function() {
-		return ["modules/MMM-Birds/mmm-birds.css"];
+		return ["mmm-birds.css"];
 	},
 	
 	getDom: function() {
 		var wrapper = document.createElement("div");
 		var button = document.createElement("div");
 		var text = document.createElement("span");
-    var iframe = document.createElement("IFRAME");
-    iframe.classList.add("iframe");
-    iframe.style = "border: 0 none transparent";
-    iframe.width = this.config.width;
-    iframe.height = this.config.height;
-    type="text/javascript";
-    iframe.src="http://kayla.manonx.com/birds.html";
-
+		var iframe = document.createElement("IFRAME");
+		iframe.classList.add("iframe");
+		iframe.style = "border: 0 none transparent";
+		iframe.width = this.config.width;
+		iframe.height = this.config.height;
+		type="text/javascript";
+		iframe.src="http://kayla.manonx.com/birds.html";
 		var hidden = true;
 		
 		iframe.className = "paint-it-black";
