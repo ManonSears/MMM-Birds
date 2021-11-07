@@ -53,9 +53,10 @@ Module.register("MMM-Birds",{
 		wrapper.appendChild(button);
 		wrapper.appendChild(iframe);
 
-		document.getElementByClassName('paint-it-black').src = document.getElementsByClassName('paint-it-black').src
+		
 		
 		$(button).on("click", function(){
+			document.getElementByClassName('paint-it-black').src = document.getElementsByClassName('paint-it-black').src
 			if(hidden){
 				$(iframe).fadeIn(200);
 				$(button).fadeTo(1000, 0.3);
