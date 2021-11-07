@@ -21,12 +21,6 @@
 }
 
 .hide-toggle span{
-	position: absolute;
 	vertical-align: center;
-	top: 50px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	text-align: center;
 	font-size: 20px;
 }
