@@ -37,36 +37,15 @@ Module.register("MMM-Birds",{
 		var text = document.createElement("span");
 		var iframe = document.createElement("IFRAME");
 		iframe.classList.add("iframe");
+		iframe.setAttribute("timestamp", new Date().getTime());
 		iframe.style = "border: 0 none transparent";
 		iframe.width = this.config.width;
 		iframe.height = this.config.height;
 		type="text/javascript";
 		iframe.src="http://kayla.manonx.com/birds.html";
 		var hidden = true;
-	},
-		scheduleUpdate: function(delay) {
-			var nextLoad = this.config.refreshInterval;
-			if (typeof delay !== "undefined" && delay >= 0) {
-				nextLoad = delay * 1000; // Convert seconds to millis
-			}
-			var self = this;
-			setTimeout(function() {
-				self.updateFrame();
-			}, 30000);
-			},
-		updateFrame: function() {
-			if (this.config.url === "") {
-				Log.error("Tried to refresh, iFrameReload URL not set!");
-				return;
-			}
-			// Change url to force refresh?
-			this.src = this.config.url;
-			Log.info("attempting to update dom for iFrameReload");
-			Log.info('/"this/" module is: ' + this);
-			this.updateDom(this.config.animationSpeed);
-			this.scheduleUpdate(this.config.refreshInterval);
-			
-
+		
+		
 		iframe.className = "paint-it-black";
 		
 		button.className = "hide-toggle";
