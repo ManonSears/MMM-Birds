@@ -10,8 +10,8 @@
 }
 
 .hide-toggle{
-	width: 600px;
-	height: 600px;
+	width: 600px!important;
+	height: 600px!important;
 	border: 2px solid #FFF;
 	border-radius: 50%;
   z-index: 100;
