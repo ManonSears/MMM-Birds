@@ -10,7 +10,6 @@
 }
 
 .hide-toggle{
-	position: relative;
 	width: 60px;
 	height: 60px;
 	border: 2px solid #FFF;
@@ -20,7 +19,6 @@
 }
 
 .hide-toggle span{
-	position: absolute;
 		top: 5px;
 		right: 0px;
 		bottom: 0px;
