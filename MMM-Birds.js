@@ -36,7 +36,6 @@ Module.register("MMM-Birds",{
 		var button = document.createElement("div");
 		var text = document.createElement("span");
 		var iframe = document.createElement("IFRAME");
-		iframe.src = iframe.src;
 		iframe.classList.add("iframe");
 		iframe.setAttribute("timestamp", new Date().getTime());
 		iframe.style = "border: 0 none transparent";
@@ -61,7 +60,7 @@ Module.register("MMM-Birds",{
 		$(button).on("click", function(){
 			
 			if(hidden){
-				
+				$(iframe).location.reload();
 				$(iframe).fadeIn(200);
 				$(button).fadeTo(1000, 0.3);
 				$(text).html('Hide');
