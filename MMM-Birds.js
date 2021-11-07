@@ -60,7 +60,6 @@ Module.register("MMM-Birds",{
 		$(button).on("click", function(){
 			
 			if(hidden){
-				$(iframe).location.reload();
 				$(iframe).fadeIn(200);
 				$(button).fadeTo(1000, 0.3);
 				$(text).html('Hide');
