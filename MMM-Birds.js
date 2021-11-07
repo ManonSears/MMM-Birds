@@ -10,7 +10,7 @@
 Module.register("MMM-Birds",{
 
 	getScripts: function() {
-		return ["js/jquery.js"];
+		return ["modules/MMM-Birds/js/jquery.js"];
 	},
 
 	getStyles: function() {
