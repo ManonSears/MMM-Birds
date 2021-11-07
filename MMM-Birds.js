@@ -28,7 +28,7 @@ Module.register("MMM-Birds",{
 	},
 
 	getStyles: function() {
-        return [this.file("css/mmm-birds.css"), "font-awesome.css"];
+        return ["css/mmm-birds.css", "font-awesome.css"];
     },
 
 	getDom: function() {
