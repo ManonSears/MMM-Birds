@@ -21,6 +21,10 @@ Module.register("MMM-Birds",{
     self.updateDom(self.config.animationSpeed || 0);
     }, this.config.updateInterval);
 
+  },
+  
+  getScripts: function() {
+		return ["modules/MMM-Birds/js/jquery.js"];
 	},
 
 	getStyles: function() {
