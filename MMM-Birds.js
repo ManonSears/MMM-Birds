@@ -23,9 +23,7 @@ Module.register("MMM-Birds",{
 
   },
   
-  getScripts: function() {
-		return ["js/jquery.js"];
-	},
+
 
 	getStyles: function() {
         return ["css/mmm-birds.css"];
