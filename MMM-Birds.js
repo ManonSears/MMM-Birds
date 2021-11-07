@@ -10,11 +10,11 @@
 Module.register("MMM-Birds",{
 
 	getScripts: function() {
-		return ["modules/MMM-Birds/js/jquery.js"];
+		return ["js/jquery.js"];
 	},
 
 	getStyles: function() {
-		return ["mmm-birds.css"];
+		return ["css/mmm-birds.css"];
 	},
 	
 	getDom: function() {
