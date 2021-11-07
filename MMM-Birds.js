@@ -24,11 +24,11 @@ Module.register("MMM-Birds",{
 },
 
 	getScripts: function() {
-		return ["js/jquery.js"];
+		return ["modules/MMM-Birds/js/jquery.js"];
 	},
 
 	getStyles: function() {
-		return ["mmm-birds.css"];
+		return ["modules/MMM-Birds/mmm-birds.css"];
 	},
 	
 	getDom: function() {
