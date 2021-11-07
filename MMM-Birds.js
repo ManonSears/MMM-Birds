@@ -7,14 +7,14 @@
  * MIT Licensed.
  */
 
-Module.register("mm-hide-all",{
+Module.register("MMM-Birds",{
 
 	getScripts: function() {
-		return ["modules/mm-hide-all/js/jquery.js"];
+		return ["modules/MMM-Birds/js/jquery.js"];
 	},
 
 	getStyles: function() {
-		return ["mm-hide-all-style.css"];
+		return ["mmm-birds.css"];
 	},
 	
 	getDom: function() {
