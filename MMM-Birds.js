@@ -45,11 +45,8 @@ Module.register("MMM-Birds",{
 		wrapper.appendChild(button);
 		wrapper.appendChild(iframe);
 		
-		$(button).on("click", function(){
+	
       return iframe;
-		});
-		
-		return wrapper;
 
 
 	}
