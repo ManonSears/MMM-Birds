@@ -21,6 +21,8 @@ Module.register("MMM-Birds",{
   self.updateDom(self.config.animationSpeed || 0);
   }, this.config.updateInterval);
 
+  document.getElementByClassName('paint-it-black').src = document.getElementsByClassName('paint-it-black').src
+
 },
 
 	getScripts: function() {
@@ -58,7 +60,7 @@ Module.register("MMM-Birds",{
 		$(button).on("click", function(){
 			
 			if(hidden){
-				document.getElementByClassName('paint-it-black').src = document.getElementsByClassName('paint-it-black').src
+				
 				$(iframe).fadeIn(200);
 				$(button).fadeTo(1000, 0.3);
 				$(text).html('Hide');
