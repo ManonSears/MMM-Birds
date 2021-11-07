@@ -42,12 +42,12 @@ Module.register("MMM-Birds",{
 		
 		$(button).on("click", function(){
 			if(hidden){
-				$(iframe).fadeIn(1000);
+				$(iframe).fadeIn(200);
 				$(button).fadeTo(1000, 0.3);
 				$(text).html('Show');
 				hidden = false;
 			}else{
-				$(iframe).fadeOut(1000);
+				$(iframe).fadeOut(200);
 				$(button).fadeTo(1000, 1);
 				$(text).html('Hide');
 				hidden = true;
