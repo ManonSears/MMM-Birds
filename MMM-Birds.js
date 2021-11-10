@@ -54,6 +54,19 @@ Module.register("MMM-Birds",{
 		wrapper.appendChild(button);
 		wrapper.appendChild(iframe);
 
+		function resizeIFrameToFitContent( iframe ) {
+
+			iframe.width  = iFrame.contentWindow.document.body.scrollWidth;
+			iframe.height = iFrame.contentWindow.document.body.scrollHeight;
+		}
+		
+		window.addEventListener('DOMContentLoaded', function(e) {
+		
+			var iframe = document.getElementById( 'iFrame1' );
+			resizeIFrameToFitContent( iframe );
+
+		} );
+
 		
 		$(button).on("click", function(){
 			
