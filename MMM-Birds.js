@@ -38,9 +38,8 @@ Module.register("MMM-Birds",{
 		var iframe = document.createElement("IFRAME");
 		iframe.classList.add("iframe");
 		iframe.style = "border: 0 none transparent";
-		iframe.style.height = '1000000px';
+		iframe.style.height = '100%';
 		iframe.width = this.config.width;
-		iframe.height = this.config.height;
 		type="text/javascript";
 		iframe.src="http://kayla.manonx.com/birds.html";
 		var hidden = true;
