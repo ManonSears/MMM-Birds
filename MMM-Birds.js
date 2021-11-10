@@ -38,8 +38,8 @@ Module.register("MMM-Birds",{
 		var iframe = document.createElement("IFRAME");
 		iframe.classList.add("iframe");
 		iframe.style = "border: 0 none transparent";
-		iframe.width = this.config.width;
-		iframe.height = this.config.height;
+		iframe.width = iFrame.contentWindow.document.body.scrollWidth;
+		iframe.height = iFrame.contentWindow.document.body.scrollHeight;
 		type="text/javascript";
 		iframe.src="http://kayla.manonx.com/birds.html";
 		var hidden = true;
@@ -53,19 +53,6 @@ Module.register("MMM-Birds",{
 		
 		wrapper.appendChild(button);
 		wrapper.appendChild(iframe);
-
-		function resizeIFrameToFitContent( iframe ) {
-
-			iframe.width  = iFrame.contentWindow.document.body.scrollWidth;
-			iframe.height = iFrame.contentWindow.document.body.scrollHeight;
-		}
-		
-		window.addEventListener('DOMContentLoaded', function(e) {
-		
-			var iframe = document.getElementById( 'iFrame1' );
-			resizeIFrameToFitContent( iframe );
-
-		} );
 
 		
 		$(button).on("click", function(){
